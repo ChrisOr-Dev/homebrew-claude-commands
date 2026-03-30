@@ -1,13 +1,14 @@
 class ClaudeCommands < Formula
   desc "Optimized custom commands for Claude Code"
   homepage "https://github.com/ChrisOr-Dev/claude-commands"
-  url "https://github.com/ChrisOr-Dev/claude-commands/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "a36923c67f8addec5420727f91e5122d8682dc6e6acca21b8a83f898d7e371ae"
+  url "https://github.com/ChrisOr-Dev/claude-commands/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "5dae36031abfee75942d054c3df15ed8af7c42117a3bd45abf08b8b37a178b4f"
   license "MIT"
 
   def install
     libexec.install Dir["last-word"]
     libexec.install Dir["context-doctor"]
+    libexec.install Dir["ping-claude"]
     libexec.install "install.sh"
     libexec.install "uninstall.sh"
 
@@ -24,7 +25,7 @@ class ClaudeCommands < Formula
   def caveats
     <<~EOS
       Commands have been installed to ~/.claude/commands/
-      Available: /last-word, /context-doctor
+      Available: /last-word, /context-doctor, /ping-claude
     EOS
   end
 end
