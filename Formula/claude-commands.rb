@@ -1,8 +1,8 @@
 class ClaudeCommands < Formula
   desc "Optimized custom commands for Claude Code"
   homepage "https://github.com/ChrisOr-Dev/claude-commands"
-  url "https://github.com/ChrisOr-Dev/claude-commands/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "e4f696edcbd0d066fdf9cf84fb16422267b41c994734151ef50c9b9f41cd3b26"
+  url "https://github.com/ChrisOr-Dev/claude-commands/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "8b243980b3fcd9fb9ec420d878effe8d8e3fd31568490205bb52df948d5a3fed"
   license "MIT"
 
   def install
